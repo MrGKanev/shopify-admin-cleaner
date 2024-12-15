@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Shopify Admin Cleaner v9</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            text-align: center;
-        }
-        .bookmarklet {
-            display: inline-block;
-            padding: 15px 25px;
-            background: #008060;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 20px 0;
-            font-weight: bold;
-            cursor: move;
-        }
-    </style>
-</head>
-<body>
-    <h1>Shopify Admin Cleaner v1</h1>
-    <p>Drag this button to your bookmarks bar:</p>
-    
-    <a class="bookmarklet" href="javascript:var s=document.createElement('style');s.textContent='p:has(.Polaris-Text--subdued){display:none}';document.head.appendChild(s);">
-        🧹 Hide Details
-    </a>
+<html lang="en">
 
-    <p><strong>Instructions:</strong></p>
-    <ol style="text-align: left;">
-        <li>Drag the green button above to your bookmarks bar</li>
-        <li>Go to your Shopify admin orders page</li>
-        <li>Click the bookmark once</li>
-    </ol>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Shopify Admin Cleaner - A simple bookmarklet to hide redundant details in your Shopify admin interface">
+  <meta name="keywords" content="shopify, admin, cleaner, bookmarklet, productivity, tool">
+  <meta name="author" content="Gabriel Kanev">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Shopify Admin Cleaner v9">
+  <meta property="og:description" content="Clean up your Shopify admin interface with one click">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gkanev.com">
+
+  <title>Shopify Admin Cleaner v9</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .bookmarklet {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #008060;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 20px 0;
+      font-weight: bold;
+      cursor: move;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Shopify Admin Cleaner v1</h1>
+  <p>Drag this button to your bookmarks bar:</p>
+
+  <a class="bookmarklet"
+    href="javascript:var s=document.createElement('style');s.textContent='p:has(.Polaris-Text--subdued){display:none}';document.head.appendChild(s);">
+    🧹 Hide Details
+  </a>
+
+  <p><strong>Instructions:</strong></p>
+  <ol style="text-align: left;">
+    <li>Drag the green button above to your bookmarks bar</li>
+    <li>Go to your Shopify admin orders page</li>
+    <li>Click the bookmark once</li>
+  </ol>
+
+  <footer>
+    <p>Created by <a href="https://gkanev.com" target="_blank" rel="noopener noreferrer">Gabriel Kanev</a></p>
+  </footer>
 </body>
+
 </html>
