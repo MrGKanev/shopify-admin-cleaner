@@ -25,15 +25,33 @@ The bookmarklet injects a small CSS rule that hides paragraphs containing subdue
 
 The cleaner has been tested with the following Shopify plugins:
 
-- Order Printer
-- Bulk Order Editor
-- ShipStation
-- AfterShip
-- Order Lookup
-- Digital Downloads
-- Quick View
+- [Order Printer](https://apps.shopify.com/order-printer)
+- [ShipStation](https://apps.shopify.com/shipstation)
+- [Meteorik: Analytics & Emails](https://apps.shopify.com/metorik)
+- [Globo Product Options](https://apps.shopify.com/product-options-pro)
+
 
 Note: Plugin compatibility may vary with different versions. If you find a plugin that works well with the cleaner, feel free to submit a pull request to update this list.
+
+## Useful Commands
+
+- Continuously watch for changes in the `style.css` file, updating the output file whenever changes occur.
+
+```bash
+npx tailwindcss -i ./assets/style.css -o ./assets/style.min.css --watch
+```
+
+- Generate a minified version of the CSS
+
+```bash
+npx tailwindcss -o ./assets/style.min.css --minify 
+```
+
+- Build the application
+
+```bash
+npm run package
+```
 
 ## Contributing
 
