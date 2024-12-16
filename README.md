@@ -2,6 +2,19 @@
 
 A simple bookmarklet that helps clean up the Shopify admin interface by hiding redundant details. This tool helps you show/print only the information you need.
 
+<table>
+  <tr>
+    <td width="45%">
+      <img src=".github/img/before.png" width="100%" alt="Before: Shopify admin interface with all details visible (data anonymized)"/>
+      <em>Before: Shopify admin interface with all details visible<br>(Data anonymized using <a href="https://github.com/MrGKanev/browser-text-anonymizer">browser-text-anonymizer</a>)</em>
+    </td>
+    <td width="45%">
+      <img src=".github/img/after.png" width="100%" alt="After: Clean interface with redundant details hidden (data anonymized)"/>
+      <em>After: Clean interface with redundant details hidden<br>(Data anonymized using <a href="https://github.com/MrGKanev/browser-text-anonymizer">browser-text-anonymizer</a>)</em>
+    </td>
+  </tr>
+</table>
+
 ## Features
 
 - Hides subdued text elements in the Shopify admin interface
