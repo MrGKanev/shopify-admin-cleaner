@@ -4,93 +4,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Admin Cleaner</title>
+
   <meta name="description"
     content="Shopify Admin Cleaner - A simple bookmarklet to hide redundant details in your Shopify admin interface">
   <meta name="keywords" content="shopify, admin, cleaner, bookmarklet, productivity, tool">
   <meta name="author" content="Gabriel Kanev">
 
-  <!-- Open Graph / Social Media Meta Tags -->
-  <meta property="og:title" content="Shopify Admin Cleaner v1">
+  <meta property="og:title" content="Shopify Admin Cleaner">
   <meta property="og:description" content="Clean up your Shopify admin interface with one click">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://gkanev.com">
+  <meta property="og:url" content="https://mrgkanev.github.io/shopify-admin-cleaner/">
 
-  <title>Shopify Admin Cleaner v9</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      text-align: center;
-    }
+  <link rel="stylesheet" href="assets/style.min.css">
 
-    .bookmarklet {
-      display: inline-block;
-      padding: 15px 25px;
-      background: #008060;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin: 20px 0;
-      font-weight: bold;
-      cursor: move;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
 </head>
 
-<body>
-  <h1>Shopify Admin Cleaner v1</h1>
-  <p>Drag this button to your bookmarks bar:</p>
+<body class="bg-white min-h-screen font-sans">
+  <div class="max-w-4xl mx-auto px-4 py-12">
+    <!-- Version Banner -->
+    <div class="inline-block bg-gray-100 text-gray-600 px-3 py-1 rounded-md text-sm mb-8">
+      Version 1.2.0
+    </div>
 
-  <a class="bookmarklet"
-    href="javascript:var s=document.createElement('style');s.textContent='p:has(.Polaris-Text--subdued){display:none}';document.head.appendChild(s);">
-    🧹 Hide Details
-  </a>
+    <!-- Header -->
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Shopify Admin Cleaner</h1>
+    <p class="text-lg text-gray-600 mb-8">Drag this button to your bookmarks bar:</p>
 
-<div class="instructions">
-  <h2>Instructions:</h2>
-  <ol style="text-align: left;">
-    <li>Drag the green button above to your bookmarks bar</li>
-    <li>Go to your Shopify admin orders page</li>
-    <li>Click the bookmark to toggle details visibility</li>
-  </ol>
-</div>
+    <!-- Bookmarklet Button -->
+    <a href="javascript:(function(){var s=document.createElement('style');s.textContent='p:has(.Polaris-Text--subdued){display:none} span[class*=_AttributeRow_]{display:none}';document.head.appendChild(s);})();"
+      class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-lg font-bold cursor-move hover:bg-emerald-700 transition-colors mb-12">
+      🧹 Hide Shopify Details
+    </a>
 
-<div class="troubleshooting">
-  <h2>Troubleshooting Guide:</h2>
-  <ul>
-    <li><strong>Nothing happens when clicking:</strong> Ensure you're on a Shopify admin page and your browser is up
-      to date.</li>
-    <li><strong>Details don't hide:</strong> Shopify may have updated their UI. Check for a newer version of this
-      tool.</li>
-    <li><strong>Error message appears:</strong> Try refreshing the page and clicking again.</li>
-    <li><strong>Bookmark disappeared:</strong> Some browsers hide bookmarks. Right-click the bookmarks bar and ensure
-      "Show bookmarks bar" is enabled.</li>
-  </ul>
-</div>
+    <!-- Instructions -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Instructions:</h2>
+      <ol class="text-left space-y-2 text-gray-700">
+        <li>1. Drag the green button above to your bookmarks bar</li>
+        <li>2. Go to your Shopify admin orders page</li>
+        <li>3. Click the bookmark to toggle details visibility</li>
+      </ol>
+    </div>
 
-<div class="use-cases">
-  <h2>Common Use Cases:</h2>
-  <ul style="text-align: left;">
-    <li><strong>Order Processing:</strong> Hide unnecessary details while processing multiple orders</li>
-    <li><strong>Printing Orders:</strong> Create cleaner printouts without subdued text</li>
-    <li><strong>Screenshot Creation:</strong> Take cleaner screenshots for documentation</li>
-    <li><strong>Training:</strong> Simplify the interface while training new staff</li>
-  </ul>
-</div>
+    <!-- Compatible Plugins -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Compatible Plugins</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="https://apps.shopify.com/order-printer" target="_blank" rel="noopener noreferrer"
+          class="p-4 border border-gray-200 rounded-lg hover:border-emerald-500 transition-colors group">
+          <h3 class="font-semibold text-gray-900 group-hover:text-emerald-600">Order Printer</h3>
+          <p class="text-sm text-gray-600 mt-1">Print orders, invoices, and packing slips in bulk</p>
+        </a>
 
-  <footer>
-    <p>Created by <a href="https://gkanev.com" target="_blank" rel="noopener noreferrer">Gabriel Kanev</a></p>
-  </footer>
+        <a href="https://apps.shopify.com/shipstation" target="_blank" rel="noopener noreferrer"
+          class="p-4 border border-gray-200 rounded-lg hover:border-emerald-500 transition-colors group">
+          <h3 class="font-semibold text-gray-900 group-hover:text-emerald-600">ShipStation</h3>
+          <p class="text-sm text-gray-600 mt-1">Streamline your shipping process</p>
+        </a>
+
+        <a href="https://apps.shopify.com/metorik" target="_blank" rel="noopener noreferrer"
+          class="p-4 border border-gray-200 rounded-lg hover:border-emerald-500 transition-colors group">
+          <h3 class="font-semibold text-gray-900 group-hover:text-emerald-600">Meteorik: Analytics & Emails</h3>
+          <p class="text-sm text-gray-600 mt-1">Advanced analytics and email automation</p>
+        </a>
+
+        <a href="https://apps.shopify.com/product-options-pro" target="_blank" rel="noopener noreferrer"
+          class="p-4 border border-gray-200 rounded-lg hover:border-emerald-500 transition-colors group">
+          <h3 class="font-semibold text-gray-900 group-hover:text-emerald-600">Globo Product Options</h3>
+          <p class="text-sm text-gray-600 mt-1">Customize product options and variants</p>
+        </a>
+      </div>
+      <p class="text-sm text-gray-600 mt-4">
+        Want to add a compatible plugin?
+        <a href="https://github.com/MrGKanev/shopify-admin-cleaner"
+          class="text-emerald-600 hover:text-emerald-700 transition-colors">
+          Submit a pull request
+        </a>
+      </p>
+    </div>
+
+    <!-- Troubleshooting -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Troubleshooting Guide:</h2>
+      <ul class="text-left space-y-4">
+        <li><span class="font-semibold">Nothing happens when clicking:</span>
+          <span class="text-gray-700">Ensure you're on a Shopify admin page and your browser is up to date.</span>
+        </li>
+        <li><span class="font-semibold">Details don't hide:</span>
+          <span class="text-gray-700">Shopify may have updated their UI. Check for a newer version of this tool.</span>
+        </li>
+        <li><span class="font-semibold">Error message appears:</span>
+          <span class="text-gray-700">Try refreshing the page and clicking again.</span>
+        </li>
+        <li><span class="font-semibold">Bookmark disappeared:</span>
+          <span class="text-gray-700">Some browsers hide bookmarks. Right-click the bookmarks bar and ensure "Show
+            bookmarks bar" is enabled.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Use Cases -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Common Use Cases:</h2>
+      <ul class="text-left space-y-4 text-gray-700">
+        <li><span class="font-semibold">Order Processing:</span> Hide unnecessary details while processing multiple
+          orders</li>
+        <li><span class="font-semibold">Printing Orders:</span> Create cleaner printouts without subdued text</li>
+        <li><span class="font-semibold">Screenshot Creation:</span> Take cleaner screenshots for documentation</li>
+        <li><span class="font-semibold">Training:</span> Simplify the interface while training new staff</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-8 mt-12 border-t border-gray-200">
+      <p class="text-gray-600 text-sm">
+        Created by
+        <a href="https://gkanev.com" target="_blank" rel="noopener noreferrer"
+          class="text-emerald-600 hover:text-emerald-700 transition-colors">
+          Gabriel Kanev
+        </a>
+      </p>
+    </footer>
+  </div>
 </body>
 
 </html>
