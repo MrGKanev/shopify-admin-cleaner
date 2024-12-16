@@ -80,4 +80,14 @@ Created by [Gabriel Kanev](https://gkanev.com)
 
 ## License
 
-This project is available under the MIT License. Feel free to modify and use it for your own purposes.
+This project is available under the MIT License. See the LICENSE file for details.
+
+## Support
+
+For support, please:
+
+1. Check the troubleshooting guide
+2. Search existing issues
+3. Create a new issue if needed
+
+Made with ❤️ for the Shopify community
