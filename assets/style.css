@@ -1,0 +1,36 @@
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .version-banner {
+      background-color: #f5f5f5;
+      color: #666;
+      padding: 5px 10px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 0.9em;
+    }
+
+    .bookmarklet {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #008060;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 20px 0;
+      font-weight: bold;
+      cursor: move;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+      color: #666;
+    }
