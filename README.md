@@ -51,19 +51,13 @@ Note: Plugin compatibility may vary with different versions. If you find a plugi
 - Continuously watch for changes in the `style.css` file, updating the output file whenever changes occur.
 
 ```bash
-npx tailwindcss -i ./assets/style.css -o ./assets/style.min.css --watch
+npx @tailwindcss/cli -i ./assets/style.css -o ./assets/style.min.css --watch
 ```
 
 - Generate a minified version of the CSS
 
 ```bash
-npx tailwindcss -o ./assets/style.min.css --minify 
-```
-
-- Build the application
-
-```bash
-npm run package
+npx @tailwindcss/cli -i ./assets/style.css -o ./assets/style.min.css --minify 
 ```
 
 ## Contributing
