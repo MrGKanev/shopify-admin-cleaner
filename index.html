@@ -4,31 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopify Admin Cleaner</title>
+  <title>Shopify Admin Cleaner - Simplify Your Shopify Admin Experience</title>
 
   <meta name="description"
-    content="Shopify Admin Cleaner - A simple bookmarklet to hide redundant details in your Shopify admin interface">
-  <meta name="keywords" content="shopify, admin, cleaner, bookmarklet, productivity, tool">
+    content="Shopify Admin Cleaner - A simple bookmarklet to hide redundant details in your Shopify admin interface for a cleaner, more efficient workflow">
+  <meta name="keywords"
+    content="shopify, admin, cleaner, bookmarklet, productivity, tool, shopify interface, admin productivity, shopify workflow, hide details">
   <meta name="author" content="Gabriel Kanev">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
 
-  <meta property="og:title" content="Shopify Admin Cleaner">
-  <meta property="og:description" content="Clean up your Shopify admin interface with one click">
+  <meta property="og:title" content="Shopify Admin Cleaner - Simplify Your Shopify Admin Experience">
+  <meta property="og:description"
+    content="Clean up your Shopify admin interface with one click for a more productive workflow">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mrgkanev.github.io/shopify-admin-cleaner/">
+  <meta property="og:site_name" content="Shopify Admin Cleaner">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shopify Admin Cleaner">
+  <meta name="twitter:description" content="Clean up your Shopify admin interface with one click">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧹</text></svg>">
 
   <link rel="stylesheet" href="assets/style.min.css">
 
 </head>
 
 <body class="bg-white min-h-screen font-sans">
-  <div class="max-w-4xl mx-auto px-4 py-12">
+  <div class="max-w-4xl mx-auto px-4 py-12" itemscope itemtype="https://schema.org/SoftwareApplication">
     <!-- Version Banner -->
     <div class="inline-block bg-neutral-100 text-neutral-600 px-3 py-1 rounded text-sm mb-8">
-      Version 1.2.0
+      Version 1.3.0
     </div>
 
     <!-- Header -->
-    <h1 class="text-4xl font-bold text-neutral-900 mb-4">Shopify Admin Cleaner</h1>
+    <h1 class="text-4xl font-bold text-neutral-900 mb-4" itemprop="name">Shopify Admin Cleaner</h1>
+    <meta itemprop="applicationCategory" content="Productivity Tool">
+    <meta itemprop="operatingSystem" content="Any">
+    <meta itemprop="softwareVersion" content="1.3.0">
     <p class="text-lg text-neutral-600 mb-8">Drag this button to your bookmarks bar:</p>
 
     <!-- Bookmarklet Button -->
@@ -125,6 +141,10 @@
           class="text-emerald-600 hover:text-emerald-700 transition">
           Gabriel Kanev
         </a>
+        <span class="block mt-2">© <span id="current-year">2025</span> - Shopify Admin Cleaner</span>
+        <script>
+          document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
       </p>
     </footer>
   </div>
