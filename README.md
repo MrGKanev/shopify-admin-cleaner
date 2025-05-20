@@ -42,6 +42,7 @@ The cleaner has been tested with the following Shopify plugins:
 - [ShipStation](https://apps.shopify.com/shipstation)
 - [Meteorik: Analytics & Emails](https://apps.shopify.com/metorik)
 - [Globo Product Options](https://apps.shopify.com/product-options-pro)
+- [MRPeasy - Manufacturing system for inventory and production management](https://apps.shopify.com/mrpeasy-manufacturing-system)
 
 
 Note: Plugin compatibility may vary with different versions. If you find a plugin that works well with the cleaner, feel free to submit a pull request to update this list.
