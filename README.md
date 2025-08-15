@@ -44,7 +44,6 @@ The cleaner has been tested with the following Shopify plugins:
 - [Globo Product Options](https://apps.shopify.com/product-options-pro)
 - [MRPeasy - Manufacturing system for inventory and production management](https://apps.shopify.com/mrpeasy-manufacturing-system)
 
-
 Note: Plugin compatibility may vary with different versions. If you find a plugin that works well with the cleaner, feel free to submit a pull request to update this list.
 
 ## Useful Commands
@@ -52,13 +51,13 @@ Note: Plugin compatibility may vary with different versions. If you find a plugi
 - Continuously watch for changes in the `style.css` file, updating the output file whenever changes occur.
 
 ```bash
-npx @tailwindcss/cli -i ./assets/style.css -o ./assets/style.min.css --watch
+npx @tailwindcss/cli -i ./assets/css/styles.css -o ./assets/css/styles.min.css --watch
 ```
 
 - Generate a minified version of the CSS
 
 ```bash
-npx @tailwindcss/cli -i ./assets/style.css -o ./assets/style.min.css --minify 
+npx @tailwindcss/cli -i ./assets/css/styles.css -o ./assets/css/styles_min.css --minify
 ```
 
 ## Contributing
