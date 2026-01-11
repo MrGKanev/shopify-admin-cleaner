@@ -17,7 +17,10 @@ A simple bookmarklet that helps clean up the Shopify admin interface by hiding r
 
 ## Features
 
+- **Toggle functionality** - click once to hide, click again to show
 - Hides subdued text elements in the Shopify admin interface
+- Hides Timeline section for cleaner order views
+- Supports new Shopify Polaris Web Components (s- prefix)
 - One-click activation
 - No installation required
 - Works with all modern browsers
@@ -32,7 +35,14 @@ A simple bookmarklet that helps clean up the Shopify admin interface by hiding r
 
 ## How It Works
 
-The bookmarklet injects a small CSS rule that hides paragraphs containing subdued text (`.Polaris-Text--subdued`), resulting in a cleaner interface without affecting functionality.
+The bookmarklet injects CSS rules that hide various UI elements in the Shopify admin:
+
+- Subdued text elements (`.Polaris-Text--subdued` and new `s-text[tone=subdued]`)
+- Attribute rows and order detail app blocks
+- Timeline section
+- Third-party app blocks (AfterShip, Loox, Judge.me, Klaviyo, Privy)
+
+Click the bookmark once to hide elements, click again to restore them (toggle functionality).
 
 ## Plugin Compatibility
 
@@ -42,7 +52,12 @@ The cleaner has been tested with the following Shopify plugins:
 - [ShipStation](https://apps.shopify.com/shipstation)
 - [Meteorik: Analytics & Emails](https://apps.shopify.com/metorik)
 - [Globo Product Options](https://apps.shopify.com/product-options-pro)
-- [MRPeasy - Manufacturing system for inventory and production management](https://apps.shopify.com/mrpeasy-manufacturing-system)
+- [MRPeasy](https://apps.shopify.com/mrpeasy-manufacturing-system)
+- [AfterShip](https://apps.shopify.com/aftership)
+- [Loox](https://apps.shopify.com/loox)
+- [Judge.me](https://apps.shopify.com/judgeme)
+- [Klaviyo](https://apps.shopify.com/klaviyo-email-marketing)
+- [Privy](https://apps.shopify.com/privy)
 
 Note: Plugin compatibility may vary with different versions. If you find a plugin that works well with the cleaner, feel free to submit a pull request to update this list.
 
